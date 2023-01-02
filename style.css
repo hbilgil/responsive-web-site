@@ -92,6 +92,60 @@ header span {
     font-size: 2.6rem;
 }
 
+/*Section Style rules*/
+
+section {
+    width: 100%;
+    height: auto;
+    background-color: #f1f1f1;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0 2px 8px 2px rgba(20, 23, 28, .15);
+    margin-top: 15px;
+    display: flex;
+    gap: 5px;
+}
+
+/*nav Style rules*/
+
+nav {
+    width: 20%;
+    margin-top: 10px;
+    height: auto;
+}
+
+nav ul {
+    width: auto;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav li a {
+    height: 50px;
+    line-height: 50px;
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid #b4b4b4;
+    padding-left: 20px;
+    display: block;
+}
+
+nav li a:hover {
+    color: white;
+    background-color: #adadad;
+}
+
+nav li i {
+    margin-right: 10px;
+}
+
+/*main Style rules*/
+
 
 
 /*Media query section for responsive design*/
