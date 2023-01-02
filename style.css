@@ -45,6 +45,12 @@ i:hover {
     opacity: 0.8;
 }
 
+#container {
+    width: 80%;
+    margin: auto;
+    height: auto;
+}
+
 @media only screen and (max-width: 505px) {
     font {
         letter-spacing: 0.1rem;
