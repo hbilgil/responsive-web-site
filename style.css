@@ -133,6 +133,7 @@ nav li a {
     border-bottom: 1px solid #b4b4b4;
     padding-left: 20px;
     display: block;
+    font-size: 0.9rem;
 }
 
 nav li a:hover {
@@ -149,19 +150,21 @@ nav li i {
 main {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     height: auto;
     width: 80%;
     padding: 0.5rem;
+    gap: 1rem;
 }
 
 main div {
     width: 48%;
     height: auto;
-    display: inline-block;
-    margin-right: 0.6rem;
+    display: flex;
+    flex-direction: column;
     border-radius: 10px;
     box-shadow: 0 2px 8px 2px rgba(20, 23, 28, .15);
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 main div > img {
@@ -183,12 +186,13 @@ main div > h5 {
 main div > p {
     color: dimgray;
     margin: 0.5rem;
+    text-align: justify;
 }
 
 main div > a:link {
     width: 8rem;
+    height: 2.2rem;
     display: block;
-    height: 2.4rem;
     padding: 10px 20px;
     background-color: #0071ce;
     color: white;
@@ -203,6 +207,26 @@ main div > a:hover {
 }
 
 /*footer Style rules*/
+
+footer {
+    background-color: rgba(0, 0, 0, 1);
+    height: 3.3rem;
+    width: 100%;
+    color: white;
+    line-height: 50px;
+    text-align: center;
+    box-shadow: 0 2px 8px 2px rgba(20, 23, 28, .15);
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+    transition: color 0.5s;
+}
+
+.link:hover {
+    color:blueviolet;
+}
 
 
 /*Media query section for responsive design*/
@@ -225,6 +249,20 @@ main div > a:hover {
         font-size: 2.2rem;
     }
 
+    nav li a {
+        font-size: 0.8rem;
+    }
+
+}
+
+@media only screen and (max-width: 780px) {
+    main div {
+        width: 80%;
+    }
+
+    nav {
+        width: 30%;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -243,6 +281,42 @@ main div > a:hover {
 
     header span {
         font-size: 1.8rem;
+    }
+
+    nav li a {
+        font-size: 0.7rem;
+    }
+
+}
+
+@media only screen and (max-width: 505px) {
+    #social p {
+        letter-spacing: 0.1rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+    }
+
+    span {
+        letter-spacing: 0.05rem;
+    }
+
+    section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main div {
+        width: 100%;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    nav li a {
+        font-size: 1rem;
     }
 
 }
@@ -267,41 +341,6 @@ main div > a:hover {
 
 }
 
-@media only screen and (max-width: 300px) {
-    header {
-        height: 100px;
-    }
-    
-    header img {
-        height: 100px;
-    }
-
-    header p {
-        gap: 0.05rem;
-        font-size: 1.2rem;
-    }
-
-    header span {
-        font-size: 1rem;
-    }
-
-}
-
-@media only screen and (max-width: 505px) {
-    #social p {
-        letter-spacing: 0.1rem;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        gap: 3px;
-    }
-
-    span {
-        letter-spacing: 0.05rem;
-    }
-
-}
-
 @media only screen and (max-width: 350px) {
     #social p {
         letter-spacing: 0.05rem;
@@ -320,4 +359,40 @@ main div > a:hover {
         align-items: center;
         height: 6rem;
     }
+
+    main div > p {
+        font-size: 0.8rem;
+    }
+
+    main div > a:link {
+        width: 7.5rem;
+        height: 2rem;
+        font-size: 0.9rem;
+        align-self: center;
+    }
+
+}
+
+@media only screen and (max-width: 300px) {
+    header {
+        height: 100px;
+    }
+    
+    header img {
+        height: 100px;
+    }
+
+    header p {
+        gap: 0.05rem;
+        font-size: 1.2rem;
+    }
+
+    header span {
+        font-size: 1rem;
+    }
+
+    footer {
+        font-size: 0.8rem;    
+    }
+
 }
