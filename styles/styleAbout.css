@@ -189,8 +189,10 @@ main p {
     color: dimgray;
     text-align: justify; 
     font-size: 1rem;
+    text-indent: 30px;
+    font-family: Cambria;
 }
-
+main hr,
 main h3,
 main p {
     margin-top: 20px;  
