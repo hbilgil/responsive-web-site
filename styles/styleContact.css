@@ -280,8 +280,14 @@ footer {
 /*Media query section for responsive design*/
 
 @media only screen and (max-width: 1080px) {
+
+    main > iframe {
+        width: 96%;
+    }
+
     main > div {
         flex-direction: column;
+        width: 96%;
     }
 
     .form {
@@ -316,12 +322,28 @@ footer {
     nav li a {
         font-size: 0.8rem;
     }
+
+    main > iframe {
+        width: 94%;
+    }
+
+    main > div {
+        width: 94%;
+    }
 }
 
 @media only screen and (max-width: 780px) {
 
     nav {
         width: 30%;
+    }
+
+    main > iframe {
+        width: 95%;
+    }
+
+    main > div {
+        width: 95%;
     }
 }
 
@@ -347,13 +369,25 @@ footer {
         font-size: 0.7rem;
     }
 
+    main > iframe {
+        width: 92.5%;
+    }
+
+    main > div {
+        width: 92.5%;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
     .row > label {
-        width: 35%;
+        width: 100%;
     }
     
     .row > input,
     .row > textarea {
-        width: 65%;
+        width: 100%;
     }
 
 }
@@ -403,13 +437,12 @@ footer {
         font-size: 1.4rem;
     }
 
-    .row > label {
-        width: 40%;
+    main > iframe {
+        width: 90%;
     }
-    
-    .row > input,
-    .row > textarea {
-        width: 60%;
+
+    main > div {
+        width: 90%;
     }
 
     .address p {
@@ -437,13 +470,20 @@ footer {
         height: 6rem;
     }
 
-    .row > label {
-        width: 45%;
+    main > iframe {
+        width: 87.5%;
     }
-    
-    .row > input,
-    .row > textarea {
-        width: 55%;
+
+    main > div {
+        width: 87.5%;
+    }
+
+    .address {
+        height: 170px;
+    }
+
+    .address p {
+        font-size: .6rem;
     }
 }
 
@@ -473,7 +513,28 @@ footer {
         font-size: 1.2rem;
     }
 
-    .row {
-        flex-direction: column;
+    .address {
+        height: 150px;
+    }
+
+    .address p {
+        font-size: .4rem;
+    }
+
+    .address i {
+        margin-right: 5px;
+    }
+
+    main > iframe {
+        width: 85%;
+    }
+
+    main > div {
+        width: 85%;
+    }
+
+    .form > input[type=submit] {
+        align-self: center;
+        padding: 6px 10px;
     }
 }
