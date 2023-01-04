@@ -177,7 +177,8 @@ main div > img {
 }
 
 main div > img:hover {
-    opacity: 0.6;}
+    opacity: 0.6;
+}
 
 main div > h5 {
     color: dimgray;
