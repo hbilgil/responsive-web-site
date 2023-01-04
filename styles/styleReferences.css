@@ -149,13 +149,70 @@ nav li i {
 /*main Style rules for Homepage*/
 
 main {
+    width: 80%;
+    height: auto;
+    margin: 0 10px;
+    padding: 0.5rem;
+}
+
+main h1 {
+    background-color: black;
+    text-align: center;
+    color: white;
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px 2px rgba(20, 23, 28, .15);
+}
+
+main > div {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     height: auto;
-    width: 80%;
+    width: 100%;
     padding: 0.5rem;
     gap: 1rem;
+}
+
+.reference-card {
+    width: 31%;
+    height: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px 2px rgba(20, 23, 28, .15);
+    text-align: center;
+}
+
+.reference-card > img {
+    width: 100%;
+    height: 60%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    opacity: 0.6;
+    transition: opacity 0.8s;
+}
+    
+.reference-card > img:hover {
+    opacity: 1;
+}
+
+.reference-card > h2 {
+    width: 100%;
+    margin-top: 0;
+    background-color: #f1f1f1;
+    color: black;
+    height: 25px;
+    line-height: 25px;
+    font-size: .8rem;
+}
+
+.reference-card > p {  
+    font-size: .7rem;
+    padding-top: 20px;
 }
 
 /*footer Style rules*/
@@ -235,6 +292,9 @@ footer {
         font-size: 0.7rem;
     }
 
+    .reference-card {
+        width: 70%;
+    }
 }
 
 @media only screen and (max-width: 505px) {
@@ -263,6 +323,10 @@ footer {
         font-size: 1rem;
     }
 
+    .reference-card {
+        width: 80%;
+    }
+
 }
 
 @media only screen and (max-width: 400px) {
@@ -281,6 +345,10 @@ footer {
 
     header span {
         font-size: 1.4rem;
+    }
+
+    .reference-card {
+        width: 90%;
     }
 
 }
@@ -302,6 +370,10 @@ footer {
         flex-direction: column;
         align-items: center;
         height: 6rem;
+    }
+
+    .reference-card {
+        width: 95%;
     }
 
 }
@@ -326,6 +398,14 @@ footer {
 
     footer {
         font-size: 0.8rem;    
+    }
+
+    .reference-card {
+        width: 100%;
+    }
+
+    main h1 {
+        font-size: 1.2rem;
     }
     
 }
